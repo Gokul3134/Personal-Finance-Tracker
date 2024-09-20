@@ -1,0 +1,76 @@
+<?php
+include 'db.php';
+session_start();
+
+if (!isset($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit();
+}
+
+$user_id = $_SESSION['user_id'];
+$username = $_SESSION['username'];
+
+?>
+
+ 
+<br>ID: <?php echo $_SESSION['user_id']; ?> <br>Username: <?php echo $_SESSION['username']; ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎨 Excited to introduce my latest project developed during my internship! 🎉 Presenting the Personal Finance Tracker—a powerful platform that enables users to manage their finances efficiently, track expenses, and set financial goals while offering seamless budgeting and reporting features. The frontend is designed using HTML and CSS, with PHP handling backend operations, and JavaScript powering dynamic charts and forms.
+
+Key Features:
+
+💰 User Registration & Login:
+
+User Registration: Users can create accounts to securely manage their finances.
+Login System: Access personalized dashboards after logging in to view expense and budget data.
+📊 Dynamic Charts & Reporting:
+
+Daily Expense Line Graph: Visualize daily expenses with an intuitive line graph, helping users track their spending patterns.
+Monthly Expense Pie Chart: Get a breakdown of monthly expenses by category, displayed in a pie chart for easy comparison.
+💵 Expense Management:
+
+Add/Edit Expenses: Users can categorize their expenses (e.g., rent, groceries) and update them as needed.
+Track Expenses: View a detailed log of expenses over time.
+📋 Budget Planning:
+
+Set Budgets: Create monthly budgets for different categories and track spending against them. Budgets are displayed at the bottom of the entry form for easy reference.
+🎯 Financial Goal Setting:
+
+Set Goals: Define and track financial goals, such as saving for a vacation or paying off a loan, with a target amount and deadline.
+Goal Tracking: Monitor progress toward goals, with options to update or delete goals.
+🔔 Task Scheduler & Reminders:
+
+Task Management: Users can create, manage, and prioritize tasks, complete with due dates and alerts.
+Task Categorization & Recurring Tasks: Organize tasks by category and set recurring reminders for regular financial tasks.
+🔐 Secure Data Management: Built with PHP for backend logic, MySQL for secure data storage, and JavaScript for interactive features like real-time charts, this platform ensures users have a streamlined, professional experience managing their finances.
+
+Check out the project on GitHub:
+
+https://lnkd.in/g38sQkaC
+
+hashtag#WebDevelopment hashtag#PHP hashtag#MySQL hashtag#JavaScript hashtag#ExpenseTracking hashtag#BudgetPlanning hashtag#FinancialGoals hashtag#TaskScheduler hashtag#ResponsiveDesign hashtag#SecurePlatform hashtag#InteractiveExperience hashtag#FinanceManagement hashtag#Internship

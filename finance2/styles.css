@@ -1,0 +1,165 @@
+/* Basic Reset */
+body, h1, p, ul, li, a, form, label, input, select, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    /* background-color: #f4f4f4; */
+    background-color: #f4f7fc;
+    color: #333;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #2c3e50;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.sidebar h3 {
+    color: #dbd637;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #34495e;
+}
+
+/* Content Styling */
+.content {
+    margin-left: 220px;
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+    color: #34495e;
+    font-size: 30px;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+    color: #34495e;
+    text-align: center;
+}
+
+.expense-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.expense-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.expense-form input, 
+.expense-form select, 
+.expense-form textarea, 
+.expense-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.expense-form input:focus, 
+.expense-form select:focus, 
+.expense-form textarea:focus {
+    border-color: #34495e;
+    outline: none;
+}
+
+.expense-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.expense-form button {
+    background-color: #34495e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.expense-form button:hover {
+    background-color: #2c3e50;
+}
+
+/* Message Styling */
+.message {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #e0f7fa;
+    color: #00796b;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .sidebar ul li {
+        margin: 0;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
+
+
